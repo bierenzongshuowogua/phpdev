@@ -1,0 +1,282 @@
+html,body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#page-container{
+	height:100%;
+	width:100%;
+	background-color:#fafafa;
+}
+#master-head-container{
+	height:56px;
+	width:100%;
+	border-bottom: 1px solid #e8e8e8;
+	position: fixed;//跟随顶部
+	top: 0px;
+	left: 0px;
+	z-index:999;
+	padding: 7px 16px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+}
+.nav-show-hide{
+	width: 60px;
+	height: 40px;
+	background-color: #ffffff;
+	color:#666666;
+	//color:var(--yt-spec-brand-icon-inactive);
+	border:none;
+}
+.icon-guide{
+	font-size: 24px;
+	color:#606060;
+	font-weight: bold;
+}
+a.logo-container{
+	height: 40px;
+	padding: 7px 15px;
+	box-sizing: border-box;
+}
+a.logo-container img{
+	height: 100%; //居中
+}
+#side-nav-container{
+	width: 200px;
+	background-color:#aaaaaa;
+	position: fixed;
+	top: 56px;
+	left: 0px;
+	height: 100%;
+	display:flex;
+	flex-direction:column;//有内容默认竖向排列
+}
+#main-section-container{
+	padding-top:56px;
+	
+}
+#main-section-container.paddingleft{
+	padding-left:240px;
+}
+#main-content-container{
+	padding: 10px 30px;
+	display:flex;
+}
+.form-warpper{
+	display:flex;
+	justify-content:center;
+}
+.column{
+	//border:1px solid #ccc;
+	width: 50%;
+	min-height:300px;
+	padding: 20px;
+	box-shadow: rgb(0,0,0,0.1) 0px 1px 2px;
+	
+}
+#search-container{
+	flex:1;
+	margin:0px 40px;
+	display: flex;
+	justify-content:center;
+}
+#search-container form{
+	flex:1;
+	display: flex;
+	justify-content:center;
+	height: 32px;
+}
+#search-container form input{
+	flex:1;
+	max-weight: 600px;
+	padding: 2px 6px;
+	color:#111111;
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid #cccccc;
+	border-top-left-radius: 2px
+	border-bottom-left-radius: 2px;
+	border-right: none;
+	box-shadow: #eeeeee 0px 1px 2px inset;
+}
+#search-container form button{
+	width:65px;
+	background-color:#f8f8f8;
+	border: 1px solid #ccc;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.icon-search{
+	font-size: 16px;
+}
+.right-icons a{
+	text-decoration: none;
+	font-size:24px;
+	color: #606060;
+	padding-left: 10px;
+}
+.right-icons a .iconfont{
+	font-size: 20px;
+}
+/*signUp.php*/
+.sign-up-container{
+	background-color: #efefee;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sign-up-container .column{
+	width:450px;
+	background-color: #ffffff;
+	max-height: 100%;
+	overflow-y: auto;
+	padding: 20px 35px;
+	
+}
+.sign-up-container .column .header img{
+	width: 100px;
+}
+
+.sign-up-container .column .header h3{
+	font-size: 24px;
+	font-weight: 400px;
+	margin:0px;
+	line-height: 32px;
+	padding-top: 20px;
+}
+
+.sign-up-container .column .header span{
+	font-size: 14px;
+}
+.sign-up-form form{
+	padding-top: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sign-up-form form input[type="text"],
+.sign-up-form form input[type="email"],
+.sign-up-form form input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #dedede;
+	margin: 10px 0;	
+	font-size: 14px;
+
+}
+.sign-up-form form input[type="submit"] {
+	background-color: #4285f4;
+	color: #ffffff;
+	border: none;
+	border-radius: 3px;
+	height: 36px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 88px;
+}
+.sign-in-message{
+	font-size: 14px;
+	font-weight: 400;
+	color: #212529;
+}
+.error-message{
+	color:#ff0000;
+	font-size: 14px;
+	font-weight: 400;
+}
+.watch-left-column{
+	flex:1;
+}
+.watch-left-column .video-player{
+	width: 100%;
+}
+.video-info{
+	width: 100%;
+	padding: 20px 0 8px 0;
+}
+.video-info h1{
+	overflow: hidden;
+	font-size:18px;
+	font-weight: 400;
+	line-height:24px;
+}
+.video-info .like-button img{
+	width: 20px;	
+	//border-style: none;
+}
+.video-info .dislike-button img{
+	width: 20px;	
+}
+.bottom-section{
+	display:flex;
+}
+.view-count{
+	flex:1;	
+	font-size:16px;
+	color:rgba(17, 17, 17, 0.6);//0.6透明度
+}
+.suggestions{
+	max-width: 425px;
+	height: 100%;
+	flex-grow: 1;//解决无限缩小
+}
+#user-center-container {
+	width: 100%;
+	height: 100%;
+}
+#user-center-container img{
+	width: 100px;
+	padding: 5px 5px;
+}
+#user-center-left-container{
+	float:left;
+	width: 20%;
+	height: 100%;
+}
+#user-center-left-container a{
+	width: 100%;
+	color: #4d4d4d;
+	/*
+ *	display: inline-block;实现点击空白处即可实现跳转
+ * 	
+  	*/
+	display: inline-block;
+	text-decoration: none;
+}
+
+#user-center-left-list{
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	height: 80%;
+	line-height: 35px;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,.05);
+	border-bottom: 1px solid #e9eaeb;
+}
+#user-center-left-list ul {
+	padding: 0;
+	width: 100%;
+}
+#user-center-left-list li{
+	padding-left: 20px;
+	width: 85%;
+	list-style-type: none;
+}
+#user-center-left-list ul li:hover{
+	background-color:#FFDDCC;//#ff5300
+	display: block; 
+}
+
+#user-center-right-container{
+	float:right;
+	width: 80%;
+	height: 100%;
+}
+.user-center-right-container-userinfo{
+	width: 100%;
+	height: 100%;
+}
+
